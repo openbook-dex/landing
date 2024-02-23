@@ -1,0 +1,166 @@
+@import url('https://fonts.cdnfonts.com/css/termina-test');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #090b0b;
+}
+@font-face {
+  font-family: 'TerminaTest-Thin';
+  src: url('/fonts/TerminaTest-Thin.woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TerminaTest-Regular';
+  src: url('/fonts/TerminaTest-Regular.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TerminaTest-Medium';
+  src: url('/fonts/TerminaTest-Medium.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TerminaTest-Light';
+  src: url('/fonts/TerminaTest-Light.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TerminaTest-heavy';
+  src: url('/fonts/TerminaTest-heavy.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TerminaTest-ExtraLight';
+  src: url('/fonts/TerminaTest-ExtraLight.woff');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TerminaTest-Demi';
+  src: url('/fonts/TerminaTest-Demi.woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TerminaTest-Bold';
+  src: url('/fonts/TerminaTest-Bold.woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TerminaTest-Black';
+  src: url('/fonts/TerminaTest-Black.woff');
+  font-display: swap;
+}
+
+.textColor {
+  background: var(
+    --Gradients-Teals,
+    linear-gradient(101deg, #00ffe5 0%, #009788 100%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.textColor21 {
+  background: white;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.textColor2 {
+  background: var(
+    --Gradients-Light-Purp,
+    linear-gradient(
+      100deg,
+      rgba(205, 200, 242, 0.99) -4.9%,
+      #b9a5ff -4.89%,
+      #9283d0 100%
+    )
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* footer styles ----->  */
+.ftBg {
+  border-top: 0.5px solid var(--whites-10, rgba(255, 255, 255, 0.1));
+  background: linear-gradient(101deg, #090b0b 0%, #1c2222 100%);
+}
+
+.col1 {
+  border-radius: 20px 80px 20px 20px;
+  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
+  background: rgba(29, 29, 29, 0.4);
+}
+
+.col2 {
+  border-radius: 80px 20px 20px 20px;
+  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
+  background: rgba(29, 29, 29, 0.4);
+  backdrop-filter: blur(12px);
+}
+.col3 {
+  border-radius: 20px 20px 20px 80px;
+  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
+  background: rgba(29, 29, 29, 0.4);
+  backdrop-filter: blur(12px);
+}
+.col4 {
+  border-radius: 20px;
+  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
+  background: rgba(29, 29, 29, 0.4);
+  backdrop-filter: blur(12px);
+}
+.col5 {
+  border-radius: 20px 80px 20px 20px;
+  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
+  background: rgba(29, 29, 29, 0.4);
+  backdrop-filter: blur(12px);
+}
+
+.secBg {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* =======> drawer style */
+.drawer {
+  width: 50% !important;
+  background-color: #090b0b !important;
+}
+@media screen and (max-width: 976px) {
+  .col1 {
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .col2 {
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .col3 {
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .col4 {
+    border: none !important;
+    background-color: transparent !important;
+  }
+  .col5 {
+    border: none !important;
+    background-color: transparent !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  .drawer {
+    width: 70% !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .drawer {
+    width: 100% !important;
+  }
+}
