@@ -48,7 +48,7 @@ const page = () => {
                   {/* New Liquidity Section */}
                   <div className='w-full flex flex-col justify-center items-center gap-0'>
                     <p className='text-[12px] sm:text-[18px] lg:text-left text-center font-normal textColor'>
-                      TOOLS
+                      TRADE
                     </p>
                     {/* Placeholder for Tools Icon or Image */}
                     <div className='w-[160px] sm:w-[256px] h-[50px] sm:h-[78px] relative'>
