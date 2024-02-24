@@ -48,12 +48,12 @@ const Opos = () => {
                 className='w-full'
               >
                 <div className='w-full flex sm:justify-start justify-center items-center gap-4 sm:gap-6'>
-                  <button className='px-[20px] sm:px-[24px] hover:opacity-80 py-[10px] sm:py-[12px] bg-purple-1 text-[16px] sm:text-[18px] text-white-1 rounded-lg'>
-                    Trade Now
-                  </button>
-                  <button className='px-[20px] sm:px-[24px] hover:opacity-80 border-[1px] border-[#9945FF] py-[10px] sm:py-[12px] bg-transparent text-[16px] sm:text-[18px] text-white-1 rounded-lg'>
+                <a href="https://v4xyz.prism.ag/trade" target="_blank" rel="noopener noreferrer" className='inline-block px-[20px] sm:px-[24px] hover:opacity-80 py-[10px] sm:py-[12px] bg-purple-1 text-[16px] sm:text-[18px] text-white-1 rounded-lg'>
+                  Trade Now
+                </a>
+                  <a href="https://github.com/openbook-dex" target="_blank" rel="noopener noreferrer" className='inline-block px-[20px] sm:px-[24px] hover:opacity-80 border-[1px] border-[#9945FF] py-[10px] sm:py-[12px] bg-transparent text-[16px] sm:text-[18px] text-white-1 rounded-lg'>
                     Build With Us
-                  </button>
+                  </a>
                 </div>
               </Fade>
             </div>

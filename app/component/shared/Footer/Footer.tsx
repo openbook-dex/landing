@@ -55,19 +55,19 @@ const Footer = () => {
 
 const socialIcons = [
   {
-    path: '#',
+    path: 'https://x.com/openbookdex',
     name: (
       <Icons.twiter className='w-[32px] h-[32px] hover:scale-105 duration-300' />
     ),
   },
   {
-    path: '#',
+    path: 'https://discord.gg/pX3n5Sercb',
     name: (
       <Icons.discord className='w-[32px] h-[32px] hover:scale-105 duration-300' />
     ),
   },
   {
-    path: '#',
+    path: 'https://github.com/openbook-dex',
     name: (
       <Icons.githHub className='w-[32px] h-[32px] hover:scale-105 duration-300' />
     ),

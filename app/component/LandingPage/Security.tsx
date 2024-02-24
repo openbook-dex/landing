@@ -29,9 +29,9 @@ const Security = () => {
 
           {/* view full report btn ----->  */}
           <Fade duration={800} delay={400} triggerOnce className='z-50'>
-            <button className='px-[20px] py-[10px] mt-6 sm:mt-10 active:translate-y-[1px] hover:opacity-80 rounded-lg bg-purple-1 text-white-1 text-[14px] sm:text-[16px] font-medium'>
-              View Full Report
-            </button>
+          <a href="https://github.com/openbook-dex/openbook-v2/blob/master/audit/openbook_audit.pdf" target="_blank" rel="noopener noreferrer" className='inline-block px-[20px] py-[10px] mt-6 sm:mt-10 active:translate-y-[1px] hover:opacity-80 rounded-lg bg-purple-1 text-white-1 text-[14px] sm:text-[16px] font-medium'>
+            View Full Report
+          </a>
           </Fade>
         </div>
       </Wrapper>
