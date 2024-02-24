@@ -45,11 +45,26 @@ const page = () => {
                     </p>
                     <Icons.jupiter className='w-[160px] sm:w-[256px] h-[50px] sm:h-[78px]' />
                   </div>
+                  {/* New Liquidity Section */}
+                  <div className='w-full flex flex-col justify-center items-center gap-0'>
+                    <p className='text-[12px] sm:text-[18px] lg:text-left text-center font-normal textColor'>
+                      TOOLS
+                    </p>
+                    {/* Placeholder for Tools Icon or Image */}
+                    <div className='w-[160px] sm:w-[256px] h-[50px] sm:h-[78px] relative'>
+                    <Image
+                        src='/assets/dropcopy.svg'
+                        fill
+                        alt=''
+                        className='object-fill'
+                      />  
+                  </div>
+                  </div>
                 </div>
               </div>
             </Slide>
             <Slide direction='right' duration={800} delay={200}>
-              {/* 2st col */}
+              {/* 2nd col */}
               <div className='w-full flex justify-center items-center'>
                 <div className='w-full max-w-[300px] flex flex-col gap-8 sm:gap-16 md:gap-16 justify-center items-center'>
                   <div className='w-full flex flex-col justify-center items-center gap-3'>
