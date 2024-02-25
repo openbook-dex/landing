@@ -52,13 +52,13 @@ const page = () => {
                     </p>
                     {/* Placeholder for Tools Icon or Image */}
                     <div className='w-[160px] sm:w-[256px] h-[50px] sm:h-[78px] relative'>
-                    <Image
-                        src='/assets/dropcopy.svg'
-                        fill
-                        alt=''
-                        className='object-fill'
-                      />  
-                  </div>
+                      <Image
+                          src='/assets/dropcopy.svg'
+                          fill
+                          alt=''
+                          className='object-fill'
+                        />  
+                    </div>
                   </div>
                 </div>
               </div>
@@ -85,6 +85,22 @@ const page = () => {
                       CREATE
                     </p>
                     <Icons.grapple className='w-[160px] sm:w-[256px] h-[44px] sm:h-[78px]' />
+                  </div>
+                  {/* New BUILD Section */}
+                  <div className='w-full flex flex-col justify-center items-center gap-0'>
+                    <p className='text-[12px] sm:text-[18px] lg:text-left text-center font-normal textColor'>
+                      TRADE
+                    </p>
+                    {/* Placeholder for new feature icon or image */}
+                    <div className='w-[160px] sm:w-[256px] h-[50px] sm:h-[78px] relative'>
+                      {/* Placeholder Image or Icon for BUILD */}
+                      <Image
+                        src='/assets/mango.svg' // Placeholder image source
+                        fill
+                        alt='BUILD'
+                        className='object-fill'
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
