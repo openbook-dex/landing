@@ -12,10 +12,10 @@ const Footer = () => {
 
   return (
     <div
-      className={`w-full ftBg py-10 ${
+      className={`w-full scale-100 2xl:scale-150 ftBg py-10 ${
         pathname === '/ecosystem'
           ? 'mt-0'
-          : 'mt-[25rem] sm:mt-[20rem] md:mt-[11rem]'
+          : 'mt-[25rem] sm:mt-[20rem] md:mt-[11rem] 2xl:mt-[24rem]'
       } `}
     >
       <Wrapper>

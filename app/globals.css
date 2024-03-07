@@ -85,42 +85,34 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+/* border gradents ------>  */
 
+.borderGradient {
+  background: #090b0b;
+}
+
+.gradient-wrapper {
+  position: relative;
+  background: linear-gradient(to right top, #9945ff, #19fb9b);
+  padding: 2px;
+}
+
+.wrapper1 {
+  position: relative;
+  background: linear-gradient(to right, #d7eefe, #0682db);
+  padding: 1px;
+  border-radius: 16px;
+}
+.borderGradientC1 {
+  background: #090b0b;
+  border-radius: 16px;
+}
+
+/* border gradients ends here ------> */
 /* footer styles ----->  */
 .ftBg {
   border-top: 0.5px solid var(--whites-10, rgba(255, 255, 255, 0.1));
   background: linear-gradient(101deg, #090b0b 0%, #1c2222 100%);
-}
-
-.col1 {
-  border-radius: 20px 80px 20px 20px;
-  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
-  background: rgba(29, 29, 29, 0.4);
-}
-
-.col2 {
-  border-radius: 80px 20px 20px 20px;
-  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
-  background: rgba(29, 29, 29, 0.4);
-  backdrop-filter: blur(12px);
-}
-.col3 {
-  border-radius: 20px 20px 20px 80px;
-  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
-  background: rgba(29, 29, 29, 0.4);
-  backdrop-filter: blur(12px);
-}
-.col4 {
-  border-radius: 20px;
-  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
-  background: rgba(29, 29, 29, 0.4);
-  backdrop-filter: blur(12px);
-}
-.col5 {
-  border-radius: 20px 80px 20px 20px;
-  border: 0.5px solid var(--Gradients-Multipoint-Multipoint-4, #d7eefe);
-  background: rgba(29, 29, 29, 0.4);
-  backdrop-filter: blur(12px);
 }
 
 .secBg {
@@ -132,6 +124,14 @@ body {
   width: 50% !important;
   background-color: #090b0b !important;
 }
+
+.hrGr:hover {
+  background: #00ffe5;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 @media screen and (max-width: 976px) {
   .col1 {
     border: none !important;
@@ -157,6 +157,12 @@ body {
 @media screen and (max-width: 700px) {
   .drawer {
     width: 70% !important;
+  }
+  .wrapper1 {
+    background: #090b0b !important;
+  }
+  .borderGradientC1 {
+    background: transparent !important;
   }
 }
 @media screen and (max-width: 500px) {
