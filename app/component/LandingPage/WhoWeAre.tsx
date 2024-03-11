@@ -4,7 +4,6 @@ import React from 'react';
 import Wrapper from '../shared/ComponentWrapper/Wrapper';
 import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
-import Link from 'next/link';
 import { FiArrowRight } from 'react-icons/fi';
 
 const WhoWeAre = () => {
@@ -59,7 +58,7 @@ const WhoWeAre = () => {
                     </p>
                   </div>
                   <a
-                    href='https://discord.gg/pFvxfWcsvt' // Replace 'yourInviteCode' with your actual Discord invite code
+                    href='https://discord.gg/pFvxfWcsvt'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='flex cursor-pointer text-white-1 z-50 group hrGr lg:mt-0 mt-8 justify-center items-center gap-2'
@@ -150,15 +149,17 @@ const WhoWeAre = () => {
                     </p>
                   </div>
                   <div className='w-full sm:flex hidden justify-center lg:justify-end lg:mt-0 mt-8'>
-                    <Link
-                      href='#'
-                      className='flex hrGr group z-50 justify-center items-center gap-2'
-                    >
-                      <p className='text-white-1 text-[16px] font-normal'>
-                        Learn More
-                      </p>
-                      <FiArrowRight className='text-[20px] text-white-1 group-hover:text-[#00ffe5]' />
-                    </Link>
+                  <a
+                    href='https://github.com/openbook-dex/openbook-v2'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='flex hrGr group z-50 justify-center items-center gap-2'
+                  >
+                    <p className='text-white-1 text-[16px] font-normal'>
+                      Learn More
+                    </p>
+                    <FiArrowRight className='text-[20px] text-white-1 group-hover:text-[#00ffe5]' />
+                  </a>
                   </div>
                 </div>
               </div>
@@ -192,16 +193,18 @@ const WhoWeAre = () => {
                     </p>
                   </div>
                   <div className='w-full flex justify-center lg:justify-end lg:mt-0 mt-8'>
-                    <Link
-                      href='#'
-                      className='flex group hrGr z-50 justify-center items-center gap-2'
-                    >
-                      <p className='text-white-1 text-[16px] font-normal'>
-                        Learn More
-                      </p>
-                      <FiArrowRight className='text-[20px] text-white-1 group-hover:text-[#00ffe5]' />
-                    </Link>
-                  </div>
+                  <a
+                    href='https://github.com/openbook-dex/openbook-v2'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='flex group hrGr z-50 justify-center items-center gap-2'
+                  >
+                    <p className='text-white-1 text-[16px] font-normal'>
+                      Learn More
+                    </p>
+                    <FiArrowRight className='text-[20px] text-white-1 group-hover:text-[#00ffe5]' />
+                  </a>
+                </div>
                 </div>
               </div>
             </Fade>
@@ -229,19 +232,19 @@ const WhoWeAre = () => {
                       100% on-chain and noncustodial orderbook.
                     </p>
                   </div>
-
-                  {/* learn more btn ---->  */}
                   <div className='w-full flex justify-center lg:justify-end mt-8 lg:mt-28'>
-                    <Link
-                      href='#'
-                      className='flex hrGr group z-50 justify-center items-center gap-2'
-                    >
-                      <p className='text-white-1 text-[16px] font-normal'>
-                        Learn More
-                      </p>
-                      <FiArrowRight className='text-[20px] text-white-1 group-hover:text-[#00ffe5]' />
-                    </Link>
-                  </div>
+                  <a
+                    href='https://github.com/openbook-dex/openbook-v2'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='flex hrGr group z-50 justify-center items-center gap-2'
+                  >
+                    <p className='text-white-1 text-[16px] font-normal'>
+                      Learn More
+                    </p>
+                    <FiArrowRight className='text-[20px] text-white-1 group-hover:text-[#00ffe5]' />
+                  </a>
+                </div>
                 </div>
               </div>
             </Fade>
