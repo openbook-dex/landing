@@ -25,7 +25,6 @@ const Hero = () => {
                 </h1>
               </div>
             </Zoom>
-            {/* statistics -----> */}
             <Slide
               className='w-full flex justify-center items-center'
               direction='up'
@@ -57,15 +56,12 @@ const Hero = () => {
           </div>
         </Fade>
       </Wrapper>
-      {/* shade 1 ----> */}
       <div className='absolute -bottom-10 left-0'>
         <Icons.shade1 className='w-[319px] h-[416px]' />
       </div>
-      {/* shade 2 ----> */}
       <div className='absolute top-0 right-0'>
         <Icons.shade2 className='w-[319px] h-[416px]' />
       </div>
-      {/* arrows ---->  */}
       <Icons.arrow1 className='absolute opacity-50 left-[0] md:left-[3rem] bottom-[8rem] md:bottom-[7rem] w-[80px] sm:w-[149px] h-[90px] sm:h-[167px]' />
       <Icons.arrow1 className='absolute opacity-30 left-[40%] bottom-[15%] sm:bottom-[0rem] w-[90px] sm:w-[123px] h-[100px] sm:h-[139px]' />
       <Icons.arrow1 className='absolute opacity-50 right-[20%] bottom-[30%] w-[40px] sm:w-[70px] h-[50px] sm:h-[80px]' />

@@ -21,9 +21,11 @@ const BuildingOnTheBook = () => {
           </Slide>
           <div className='flex justify-center items-center gap-4 sm:gap-10 lg:gap-24'>
             <Fade duration={500} delay={300} triggerOnce>
-              <p className='text-white-1/40 font-medium text-[16px] sm:text-[18px] lg:text-[20px]'>
-                info@openbook.com
-              </p>
+            <p className='text-white-1/40 font-medium text-[16px] sm:text-[18px] lg:text-[20px]'>
+            <a href="mailto:info@openbook.com" className='text-white-1/40 font-medium text-[16px] sm:text-[18px] lg:text-[20px]'>
+              info@openbook.com
+            </a>            
+            </p>
             </Fade>
             <Slide direction='right' duration={500} delay={400} triggerOnce>
               <div className='w-[90px] sm:w-[200px] lg:w-[250px] h-[40px] sm:h-[60px] lg:h-[86px] relative'>

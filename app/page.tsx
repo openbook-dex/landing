@@ -11,7 +11,6 @@ export default function Home() {
       <WhoWeAre />
       <Security />
       <BuildingOnTheBook />
-      {/* bg image  */}
       <div className="w-full z-0 h-full bg-[url('/assets/base.png')] opacity-60 bg-no-repeat bg-bottom absolute top-0 left-0"></div>
     </div>
   );

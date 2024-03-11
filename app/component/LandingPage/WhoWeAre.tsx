@@ -2,7 +2,6 @@
 
 import React from 'react';
 import Wrapper from '../shared/ComponentWrapper/Wrapper';
-import * as Icons from '../../svg/Icons';
 import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
 import Link from 'next/link';
@@ -22,9 +21,7 @@ const WhoWeAre = () => {
               WHO WE ARE
             </p>
           </Fade>
-          {/* 1st and 2nd col ---> */}
           <div className='w-full grid 2xl:mt-[9rem] grid-cols-1 lg:grid-cols-[1.3fr,2fr] scale-100 2xl:scale-150 gap-6 lg:mt-0 -mt-16 z-50'>
-            {/* ist col ---> */}
             <Slide
               direction='left'
               duration={1000}
@@ -33,7 +30,6 @@ const WhoWeAre = () => {
             >
               <div className='w-full max-w-[550px] lg:max-w-full h-full relative wrapper1'>
                 <div className='px-0 sm:px-6 py-0 sm:py-6 flex flex-col borderGradientC1 justify-between lg:items-start items-center h-full'>
-                  {/* image */}
                   <div className='w-full flex flex-col gap-2'>
                     <div className='block lg:absolute -right-0 top-0'>
                       <div className='w-[450px] lg:block hidden lg:w-[300px] xl:w-[400px] h-[370px] lg:h-[200px] xl:h-[280px] relative'>
@@ -62,18 +58,18 @@ const WhoWeAre = () => {
                       and funded by the community it serves.
                     </p>
                   </div>
-                  {/* learn more btn ---->  */}
-                  <Link
-                    href='/about'
+                  <a
+                    href='https://discord.gg/pFvxfWcsvt' // Replace 'yourInviteCode' with your actual Discord invite code
+                    target='_blank'
+                    rel='noopener noreferrer'
                     className='flex cursor-pointer text-white-1 z-50 group hrGr lg:mt-0 mt-8 justify-center items-center gap-2'
                   >
-                    <p className='text-[16px] font-normal'>Learn More</p>
+                    <p className='text-[16px] font-normal'>Join our community</p>
                     <FiArrowRight className='text-[20px] text-white-1 group-hover:text-[#00ffe5]' />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </Slide>
-            {/* 2nd col ---> */}
             <Slide
               direction='right'
               duration={1000}
@@ -82,7 +78,6 @@ const WhoWeAre = () => {
             >
               <div className='wrapper1 w-full !rounded-tl-[80px] max-w-[550px] lg:max-w-full h-full'>
                 <div className='w-full max-w-[550px] !rounded-tl-[80px] lg:max-w-full borderGradientC1 h-full px-0 sm:px-6 py-6 relative justify-between flex flex-col items-center lg:items-start'>
-                  {/* image ---> */}
                   <div className='lg:w-auto w-full block lg:absolute -bottom-1 right-0 xl:-right-1'>
                     <div className='w-[500px] lg:block hidden lg:w-[470px] xl:w-[520px] h-[450px] lg:h-[380px] xl:h-[450px] relative lg:ml-0 -ml-[14rem] -mb-[4rem] lg:mb-0'>
                       <Image
@@ -114,23 +109,22 @@ const WhoWeAre = () => {
                       cases.
                     </p>
                   </div>
-                  {/* learn more btn ---->  */}
-                  <Link
-                    href='#'
+                  <a
+                    href='https://github.com/openbook-dex/openbook-v2'
                     className='flex hover:opacity-80 hrGr group z-50 justify-center items-center gap-2 mt-8 lg:mt-14 xl:mt-8'
+                    target='_blank'
+                    rel='noopener noreferrer'
                   >
                     <p className='text-white-1 text-[16px] font-normal'>
-                      Learn More
+                      DEX V2 Code
                     </p>
                     <FiArrowRight className='text-[20px] text-white-1 group-hover:text-[#00ffe5]' />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </Slide>
           </div>
-          {/* 3rd + 4rd + 5th col -----> */}
           <div className='w-full grid grid-cols-1 lg:grid-cols-[0.6fr,1fr,1fr] gap-6 z-50 mt-4 2xl:mt-[17rem] scale-100 2xl:scale-150'>
-            {/* 3rd col ---->  */}
             <Fade
               duration={800}
               delay={200}
@@ -155,7 +149,6 @@ const WhoWeAre = () => {
                       behavior and venture capital influences.
                     </p>
                   </div>
-                  {/* learn more btn ---->  */}
                   <div className='w-full sm:flex hidden justify-center lg:justify-end lg:mt-0 mt-8'>
                     <Link
                       href='#'
@@ -170,7 +163,6 @@ const WhoWeAre = () => {
                 </div>
               </div>
             </Fade>
-            {/* 4rth col --->  */}
             <Fade
               duration={800}
               delay={400}
@@ -199,7 +191,6 @@ const WhoWeAre = () => {
                       and trade any SPL token.
                     </p>
                   </div>
-                  {/* learn more btn ---->  */}
                   <div className='w-full flex justify-center lg:justify-end lg:mt-0 mt-8'>
                     <Link
                       href='#'
@@ -214,7 +205,6 @@ const WhoWeAre = () => {
                 </div>
               </div>
             </Fade>
-            {/* 5th col --->  */}
             <Fade
               duration={800}
               delay={600}

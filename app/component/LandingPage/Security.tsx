@@ -27,20 +27,23 @@ const Security = () => {
             </div>
           </Slide>
 
-          {/* view full report btn ----->  */}
           <Fade
             duration={800}
             delay={400}
             triggerOnce
             className='z-50 mb-0 2xl:mb-[7rem]'
           >
-            <button className='px-[20px] py-[10px] mt-6 sm:mt-10 active:translate-y-[1px] hover:opacity-80 rounded-lg bg-purple-1 text-white-1/80 text-[14px] sm:text-[16px] font-medium'>
-              View Full Report
-            </button>
+          <a
+            href="https://github.com/openbook-dex/openbook-v2/blob/master/audit/openbook_audit.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className='inline-block px-[20px] py-[10px] mt-6 sm:mt-10 active:translate-y-[1px] hover:opacity-80 rounded-lg bg-purple-1 text-white-1/80 text-[14px] sm:text-[16px] font-medium'
+          >
+            View Full Report
+          </a>
           </Fade>
         </div>
       </Wrapper>
-      {/* shapes ----->  */}
       <Icons.shade2 className=' w-[400px] md:w-[690px] h-[350px] md:h-[600px] hidden sm:absolute -left-[15%] -top-[30%]' />
       <Icons.shade2 className='w-[400px] md:w-[650px] h-[500px] md:h-[600px] hidden sm:absolute -right-[10%] -top-[30%]' />
     </div>

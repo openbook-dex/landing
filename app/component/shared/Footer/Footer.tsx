@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <div
-      className={`w-full scale-100 2xl:scale-150 ftBg py-10 ${
+      className={`w-full ftBg py-10 ${
         pathname === '/ecosystem'
           ? 'mt-0'
           : 'mt-[25rem] sm:mt-[20rem] md:mt-[11rem] 2xl:mt-[24rem]'
@@ -20,7 +20,6 @@ const Footer = () => {
     >
       <Wrapper>
         <div className='w-full flex justify-center items-center flex-col gap-10'>
-          {/* top ---> */}
           <Fade duration={800} delay={100} triggerOnce>
             <div className='flex flex-col justify-center items-center gap-2'>
               <Icons.logo className='w-[147px] h-[32px]' />
@@ -29,19 +28,15 @@ const Footer = () => {
               </p>
             </div>
           </Fade>
-          {/* bottom sec ----> */}
           <Fade duration={800} delay={200} triggerOnce>
             <div className='flex flex-col justify-center items-center gap-2'>
-              {/* social icons ---> */}
-              <div className='flex gap-6 justify-center items-center'>
-                {socialIcons.map((item, index) => {
-                  return (
-                    <Link key={index} href={item.path}>
-                      {item.name}
-                    </Link>
-                  );
-                })}
-              </div>
+            <div className='flex gap-6 justify-center items-center'>
+              {socialIcons.map((item, index) => (
+                <a key={index} href={item.path} target="_blank" rel="noopener noreferrer">
+                  {item.icon}
+                </a>
+              ))}
+            </div>
               <p className='text-[16px] font-normal text-white-1/60'>
                 © 2024 OpenBook. All rights reserved.
               </p>
@@ -56,28 +51,21 @@ const Footer = () => {
 const socialIcons = [
   {
     path: 'https://x.com/openbookdex',
-    name: (
-      <Icons.twiter className='w-[32px] h-[32px] hover:scale-105 duration-300' />
-    ),
+    icon: (<Icons.twiter className='w-[32px] h-[32px] hover:scale-105 duration-300' />),
   },
   {
-    path: 'https://discord.gg/pX3n5Sercb',
-    name: (
-      <Icons.discord className='w-[32px] h-[32px] hover:scale-105 duration-300' />
-    ),
+    path: 'https://discord.gg/pFvxfWcsvt',
+    icon: (<Icons.discord className='w-[32px] h-[32px] hover:scale-105 duration-300' />),
   },
   {
     path: 'https://github.com/openbook-dex',
-    name: (
-      <Icons.githHub className='w-[32px] h-[32px] hover:scale-105 duration-300' />
-    ),
+    icon: (<Icons.githHub className='w-[32px] h-[32px] hover:scale-105 duration-300' />),
   },
   {
-    path: '#',
-    name: (
-      <Icons.gitBook className='w-[32px] h-[32px] hover:scale-105 duration-300' />
-    ),
+    path: 'https://github.com/openbook-dex',
+    icon: (<Icons.gitBook className='w-[32px] h-[32px] hover:scale-105 duration-300' />),
   },
 ];
+
 
 export default Footer;

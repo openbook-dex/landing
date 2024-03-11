@@ -35,6 +35,7 @@ const config: Config = {
         clg: '1182px',
         xl: '1280px',
         '2xl': '2000px',
+        '3xl': '2900px',
       },
       colors: {
         black: {
