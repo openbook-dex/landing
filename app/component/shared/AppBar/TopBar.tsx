@@ -17,31 +17,33 @@ const TopBar = () => {
   };
 
   return (
-    <div className='w-full bg-transparent cursor-pointer h-[60px] 3xl:h-[160px] sm:h-[90px]'>
+    <div className='w-full bg-transparent cursor-pointer h-[60px] 2xl:h-[120px] 3xl:h-[210px] sm:h-[90px]'>
       <Wrapper style='h-full'>
         <div className='w-full h-full flex justify-between items-center'>
           <Link href='/' className='z-50'>
-            <Icons.logo className='w-[147px] h-[28px] sm:h-[32px]' />
+            <Icons.logo className='w-[147px] h-[28px] sm:h-[32px] ' />
           </Link>
           <div className='hidden md:flex justify-center items-center gap-10 z-50'>
-            {links.map((item, index) => (
-              <Link
-                key={index}
-                href={item.path}
-                className={`text-white-1 ${
-                  pathName === item.path
-                    ? 'after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-[#00FFE5] after:w-full after:duration-200'
-                    : 'after:bg-white-1'
-                } font-normal text-[18px] relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] hover:after:w-full after:duration-200`}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {links.map((item, index) => {
+              return (
+                <Link
+                  key={index}
+                  href={item.path}
+                  className={`text-white-1 ${
+                    pathName === item.path
+                      ? 'after:absolute after:bottom-0 after:left-0 after:h-[2px] after:bg-[#00FFE5] after:w-full after:duration-200'
+                      : ' after:bg-white-1'
+                  } font-normal text-[18px] relative after:absolute after:w-0 after:bottom-0 after:left-0 after:h-[2px] hover:after:w-full after:duration-200`}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </div>
-          <a href="https://v4xyz.prism.ag/trade/v2/CFSMrBssNG8Ud1edW59jNLnq2cwrQ9uY5cM3wXmqRJj3" // Replace with your GitHub link
-            className='hidden md:inline-block text-center text-white-1 px-8 py-3 bg-purple-1 rounded-lg text-[16px] font-medium hover:opacity-80 active:translate-y-[1px] z-50'
-            target="_blank" rel="noopener noreferrer">
-            Trade Now
+          <a href="https://prism.ag/trade"
+          className='text-white-1 z-50 px-8 2xl:px-10 3xl:px-16 md:block hidden py-3 bg-purple-1 rounded-lg text-[16px] font-medium hover:opacity-80 active:translate-y-[1px]'
+          target="_blank" rel="noopener noreferrer">
+          Trade Now
           </a>
           <div className='md:hidden block'>
             <button onClick={toggleDrawer}>
@@ -81,7 +83,7 @@ const TopBar = () => {
                     );
                   })}
                 </div>
-                <a href="https://github.com/yourusername/yourrepository" // Replace with your actual GitHub repository URL
+                <a href="https://prism.ag/trade"
                 className='inline-block text-center w-full max-w-[400px] mt-6 px-8 py-3 bg-purple-1 text-white-1 rounded-lg text-[18px] font-medium hover:opacity-80 active:translate-y-[1px]'
                 target="_blank" rel="noopener noreferrer">
                 Trade Now

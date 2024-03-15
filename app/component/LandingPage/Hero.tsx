@@ -7,20 +7,20 @@ import { Fade, Zoom, Slide } from 'react-awesome-reveal';
 
 const Hero = () => {
   return (
-    <div className='w-full h-[calc(100vh-60px)] md:h-[calc(100vh-90px)] justify-center items-center flex relative'>
+    <div className='w-full overflow-x-hidden overflow-y-hidden h-[calc(100vh-60px)] md:h-[calc(100vh-90px)] justify-center items-center flex relative'>
       <Wrapper style='h-full'>
         <Fade duration={1200} triggerOnce className='w-full h-full'>
-          <div className='w-full scale-100 2xl:scale-150 flex flex-col gap-5 justify-center items-center h-full'>
+          <div className='w-full flex flex-col gap-5 justify-center items-center h-full'>
             <Zoom duration={1500} triggerOnce>
-              <div className="w-full -mt-28 max-w-[300px] sm:max-w-[450px] md:max-w-[940px] h-[300px] sm:h-[400px] md:h-[490px] bg-[url('/assets/heroShape.svg')] flex flex-col justify-center items-center bg-center bg-cover bg-no-repeat">
-                <p className='text-[#E0C7FF] mt-[5rem] sm:mt-[9rem] text-[16px] sm:text-[24px] md:text-[30px] font-semibold'>
+              <div className="w-full -mt-28 max-w-[300px] sm:max-w-[450px] md:max-w-[940px] 2xl:max-w-[1800px] 3xl:w-[2500px] 2xl:h-[800px] 3xl:h-[1700px] h-[300px] sm:h-[400px] md:h-[490px] bg-[url('/assets/heroShape.svg')] flex flex-col justify-center items-center bg-center bg-cover bg-no-repeat">
+                <p className='text-[#E0C7FF] mt-[5rem] sm:mt-[9rem] 3xl:mt-[19rem] text-[16px] 2xl:text-[42px] 3xl:text-[75px] sm:text-[24px] md:text-[30px] font-semibold'>
                   OpenBook
                 </p>
 
-                <h1 className='text-[38px] sm:block hidden sm:text-[50px] md:text-[70px] lg:text-[96px] tracking-[4px] leading-[50px] sm:leading-[60px] md:leading-[90px] lg:leading-[120px] text-center font-bold font-terminaExtraBold text-white-1'>
+                <h1 className='text-[38px] sm:block hidden sm:text-[50px] md:text-[70px] lg:text-[96px] 2xl:text-[140px] 3xl:text-[240px] tracking-[4px] leading-[50px] sm:leading-[60px] md:leading-[90px] lg:leading-[120px] 2xl:leading-[180px] 3xl:leading-[300px] text-center font-bold font-terminaExtraBold text-white-1 mt-0 2xl:mt-3'>
                   A DEX For <br /> The People
                 </h1>
-                <h1 className='text-[36px] sm:hidden block sm:text-[50px] md:text-[70px] lg:text-[96px] tracking-[4px] leading-[50px] sm:leading-[60px] md:leading-[90px] lg:leading-[120px] text-center font-bold font-terminaExtraBold text-white-1'>
+                <h1 className='text-[36px] sm:hidden block sm:text-[50px] md:text-[70px] lg:text-[96px] 2xl:text-[120px] 3xl:text-[160px] tracking-[4px] leading-[50px] sm:leading-[60px] md:leading-[90px] lg:leading-[120px] text-center font-bold font-terminaExtraBold text-white-1 '>
                   A DEX For The People
                 </h1>
               </div>
@@ -32,21 +32,21 @@ const Hero = () => {
               delay={500}
               triggerOnce
             >
-              <div className='w-full max-w-[300px] rounded-xl sm:max-w-[500px] md:max-w-[700px] flex justify-center items-center gradient-wrapper'>
-                <div className='w-full py-3 flex justify-center rounded-xl items-center gap-24 sm:gap-28 borderGradient'>
+              <div className='w-full max-w-[300px] rounded-xl 3xl:rounded-2xl sm:max-w-[500px] md:max-w-[700px] 2xl:max-w-[900px] 3xl:max-w-[1750px] flex justify-center items-center gradient-wrapper '>
+                <div className='w-full py-3 2xl:py-5 3xl:py-14 flex justify-center rounded-xl items-center gap-24 sm:gap-28 3xl:gap-[14rem] borderGradient'>
                   <div className='flex justify-center items-center flex-col gap-0'>
-                    <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] font-terminaExtraDemi'>
+                    <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
                       $9.8M
                     </p>
-                    <p className='text-[14px] sm:text-[16px] md:text-[18px] font-normal text-white-1/60'>
+                    <p className='text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[24px] font-normal 3xl:text-[44px] text-white-1/60'>
                       24H Volume
                     </p>
                   </div>
                   <div className='flex justify-center items-center flex-col gap-0'>
-                    <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] font-terminaExtraDemi'>
+                    <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
                       8.9k
                     </p>
-                    <p className='text-[14px] sm:text-[16px] md:text-[18px] font-normal text-white-1/60'>
+                    <p className='text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[24px] font-normal 3xl:text-[48px] text-white-1/60'>
                       Total Markets
                     </p>
                   </div>

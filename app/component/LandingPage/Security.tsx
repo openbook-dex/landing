@@ -7,23 +7,23 @@ import { Fade, Slide } from 'react-awesome-reveal';
 
 const Security = () => {
   return (
-    <div className='w-full 2xl:scale-150 scale-100 mt-10 py-10 sm:py-16 2xl:py-[4rem] secBg relative overflow-hidden z-50'>
+    <div className='w-full overflow-x-hidden mt-6 py-10 sm:py-16 2xl:py-[5rem] secBg relative overflow-hidden z-50'>
       <Wrapper>
         <div className='w-full flex flex-col gap-2 justify-center items-center'>
           <Fade duration={800} delay={100} triggerOnce>
-            <p className='text-[12px] sm:text-[18px] font-normal textColor'>
+            <p className='text-[12px] sm:text-[18px] 2xl:text-[22px] 3xl:text-[32px] font-normal textColor'>
               SECURITY
             </p>
           </Fade>
           <Slide direction='up' duration={800} delay={200} triggerOnce>
-            <h1 className='text-[20px] sm:text-[28px] text-white-1/80 font-semibold'>
+            <h1 className='text-[20px] sm:text-[28px] 2xl:text-[40px] 3xl:text-[60px] text-white-1/80 font-semibold'>
               Audited and Verified by
             </h1>
           </Slide>
           <Slide direction='up' duration={800} delay={300} triggerOnce>
             <div className='flex justify-center items-center gap-2 mt-4'>
-              <Icons.logo2 className='w-[28px] sm:w-[85px] h-[28px] sm:h-[85px]' />
-              <Icons.otterSec className='w-[90px] sm:w-[313px] h-[17px] sm:h-[57px]' />
+              <Icons.logo2 className='w-[28px] sm:w-[85px] 2xl:w-[150px] 3xl:w-[250px] h-[28px] sm:h-[85px] 2xl:h-[130px] 3xl:h-[200px]' />
+              <Icons.otterSec className='w-[90px] sm:w-[313px] 2xl:w-[450px] 3xl:w-[620px] h-[17px] sm:h-[57px] 2xl:h-[100px] 3xl:h-[180px]' />
             </div>
           </Slide>
 
@@ -31,7 +31,7 @@ const Security = () => {
             duration={800}
             delay={400}
             triggerOnce
-            className='z-50 mb-0 2xl:mb-[7rem]'
+            className='z-50 mb-0 2xl:mb-[0rem]'
           >
           <a
             href="https://github.com/openbook-dex/openbook-v2/blob/master/audit/openbook_audit.pdf"

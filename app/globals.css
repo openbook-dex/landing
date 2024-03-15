@@ -97,11 +97,38 @@ body {
   padding: 2px;
 }
 
+@media screen and (min-width: 2900px) {
+  .gradient-wrapper {
+    padding: 4px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .gradient-wrapper {
+    padding: 1px !important;
+  }
+}
 .wrapper1 {
   position: relative;
   background: linear-gradient(to right, #d7eefe, #0682db);
   padding: 1px;
   border-radius: 16px;
+}
+
+@media screen and (min-width: 1800px) {
+  .wrapper1 {
+    padding: 2px !important;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  .wrapper1 {
+    padding: 3px !important;
+  }
+}
+@media screen and (min-width: 3000px) {
+  .wrapper1 {
+    padding: 4px !important;
+  }
 }
 .borderGradientC1 {
   background: #090b0b;

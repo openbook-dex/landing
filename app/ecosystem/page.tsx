@@ -125,8 +125,8 @@ const ecoSystemData = [
     name: 'GOVERN',
     img: (
       <a href='https://app.themetadao.org/' target='_blank' rel='noopener noreferrer'>
-      <div className='w-[180px] sm:w-[300px] 2xl:w-[550px] 3xl:w-[800px] h-[45px] 2xl:h-[120px] 3xl:h-[300px] sm:h-[80px] relative'>
-        <Image src='/assets/metaDaoLogo.svg' fill alt='' className='object-fill' />
+      <div className='w-[160px] sm:w-[250px] 2xl:w-[400px] 3xl:w-[650px] 2xl:h-[100px] 3xl:h-[280px] h-[25px] sm:h-[44px] relative'>
+        <Image src='/assets/meta_dao_logo.svg' fill alt='' className='object-fill' />
       </div>
       </a>
     ),
