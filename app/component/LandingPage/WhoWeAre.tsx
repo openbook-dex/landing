@@ -21,22 +21,22 @@ const WhoWeAre = () => {
             <Slide
               direction='left'
               duration={1000}
-              className='w-full justify-center flex items-center'
+              className='w-full justify-center flex items-center overflow-hidden'
               triggerOnce
             >
               <div className='w-full max-w-[550px] 2xl:w-[680px] 3xl:w-[850px] lg:max-w-full h-full relative wrapper1'>
                 <div className='px-0 w-full sm:px-6 py-0 sm:py-6 flex flex-col borderGradientC1 justify-between lg:items-start items-center h-full'>
                   <div className='w-full flex flex-col gap-2'>
-                    <div className='block lg:absolute -right-0 top-0'>
-                      <div className='w-[450px] lg:block hidden lg:w-[300px] xl:w-[400px] 2xl:w-[600px] 3xl:w-[700px] h-[370px] 2xl:h-[350px] 3xl:h-[480px] lg:h-[200px] xl:h-[280px] relative'>
+                  <div className='block lg:absolute -right-0 -top-[0px]'>
+                      <div className='w-[450px] lg:block hidden lg:w-[320px] xl:w-[380px] 2xl:w-[600px] 3xl:w-[700px] h-[100px] 2xl:h-[400px] 3xl:h-[480px] lg:h-[200px] xl:h-[300px] relative'>
                         <Image
-                          src='/assets/col1.svg'
+                          src='/assets/col11.svg'
                           className='object-cover'
                           fill
                           alt=''
                         />
                       </div>
-                      <div className='w-full sm:w-[300px] csm:w-[400px] md:w-[550px] lg:hidden block h-[250px] sm:h-[350px] csm:h-[400px] md:h-[470px] relative lg:ml-0 ml-[0%] sm:ml-[16%] csm:ml-[3rem] md:-ml-[2rem] -mb-[6rem]'>
+                      <div className='w-full sm:w-[520px] csm:w-[520px] md:w-[550px] lg:hidden block h-[250px] sm:h-[430px] csm:h-[420px] md:h-[300px] relative lg:ml-0 ml-[0%] sm:-ml-[50px] csm:ml-[0rem] md:-ml-[2rem] -mb-[6rem]'>
                         <Image
                           src='/assets/sCol1.svg'
                           className='object-fill'
@@ -45,7 +45,7 @@ const WhoWeAre = () => {
                         />
                       </div>
                     </div>
-                    <h2 className='text-[26px] sm:text-[32px] sm:mt-0 text-center lg:text-left xl:text-[48px] 2xl:text-[58px] 3xl:text-[75px] mt-12 lg:mt-[6rem] xl:mt-[8rem] tracking-[3px] text-white-1 font-terminaExtraDemi'>
+                    <h2 className='text-[26px] sm:text-[32px] sm:mt-2 md:mt-14 text-center lg:text-left xl:text-[48px] 2xl:text-[58px] 3xl:text-[75px] mt-12 lg:mt-[4rem] xl:mt-[8rem] tracking-[3px] text-white-1 font-terminaExtraDemi'>
                       A DEX for <br />
                       <span className='textColor'> The People</span>
                     </h2>
@@ -73,10 +73,10 @@ const WhoWeAre = () => {
             >
               <div className='wrapper1 w-full !rounded-tl-[80px] max-w-[550px] lg:max-w-full h-full'>
                 <div className='w-full max-w-[550px] !rounded-tl-[80px] lg:max-w-full borderGradientC1 h-full px-0 sm:px-6 py-6 relative justify-between flex flex-col items-center lg:items-start'>
-                  <div className='lg:w-auto w-full block lg:absolute -bottom-1 right-0 xl:-right-1'>
-                    <div className='w-[500px] 2xl:w-[650px] 3xl:w-[900px] lg:block hidden lg:w-[470px] xl:w-[520px] h-[450px] lg:h-[380px] 2xl:h-[500px] 3xl:h-[800px] xl:h-[450px] relative lg:ml-0 -ml-[14rem] -mb-[4rem] lg:mb-0'>
+                <div className='lg:w-auto w-full block lg:absolute bottom-1 right-0 lg:right-2 xl:right-1'>
+                    <div className='w-[500px] 2xl:w-[590px] 3xl:w-[750px] lg:block hidden lg:w-[320px] xl:w-[420px] h-[450px] lg:h-[260px] 2xl:h-[500px] 3xl:h-[650px] xl:h-[350px] relative lg:ml-0 -ml-[14rem] -mb-[4rem] lg:mb-0'>
                       <Image
-                        src='/assets/col2.svg'
+                        src='/assets/object.svg'
                         fill
                         alt=''
                         className='object-cover'
@@ -108,9 +108,10 @@ const WhoWeAre = () => {
                     href='https://github.com/openbook-dex/openbook-v2'
                     className='flex hover:opacity-80 hrGr group z-50 justify-center items-center gap-2 mt-8 lg:mt-14 xl:mt-8'
                     target='_blank'
-                    rel='noopener noreferrer'>
+                    rel='noopener noreferrer'
+                  >
                     <p className='text-white-1 3xl:text-[32px] 2xl:text-[22px] text-[16px] font-normal'>
-                      DEX V2 Code
+                    DEX V2 Code
                     </p>
                     <FiArrowRight className='text-[20px] 3xl:text-[36px] 2xl:text-[26px] text-white-1 group-hover:text-[#00ffe5]' />
                   </a>
@@ -118,7 +119,7 @@ const WhoWeAre = () => {
               </div>
             </Slide>
           </div>
-          <div className='w-full grid grid-cols-1 lg:grid-cols-[0.6fr,1fr,1fr] 2xl:grid-cols-[0.8fr,1fr,1fr] gap-6 2xl:gap-8 3xl:gap-12 z-50 mt-4 2xl:mt-[2rem] 3xl:mt-[48px]'>
+          <div className='w-full grid grid-cols-1 lg:grid-cols-[1.3fr,2fr] xl:grid-cols-[0.8fr,1fr,1fr] gap-6 2xl:gap-8 3xl:gap-12 z-50 mt-4 lg:mt-3 2xl:mt-[2rem] 3xl:mt-[48px]'>
             <Fade
               duration={800}
               delay={200}
@@ -128,7 +129,7 @@ const WhoWeAre = () => {
               <div className='w-full max-w-[550px] !rounded-bl-[80px] h-full wrapper1'>
                 <div className='w-full max-w-[550px] !rounded-bl-[80px] borderGradientC1 h-full flex items-center lg:items-start justify-between flex-col px-0 sm:px-6 py-6 lg:pb-6 pb-10 sm:pb-20'>
                   <div className='w-full max-w-[550px] flex flex-col gap-4'>
-                    <h2 className='text-[40px] lg:block hidden 2xl:text-[58px] 3xl:text-[75px] tracking-[3px] mt-20 leading-[50px] 2xl:leading-[70px] 3xl:leading-[90px]  text-white-1 font-terminaExtraDemi'>
+                    <h2 className='text-[40px] lg:block hidden 2xl:text-[58px] 3xl:text-[75px] tracking-[3px] mt-20 leading-[50px] 2xl:leading-[70px] 3xl:leading-[90px] text-white-1 font-terminaExtraDemi'>
                       <span className='textColor'> Zero</span> Protocol Fees
                     </h2>
                     <h2 className='text-[26px] sm:text-[40px] lg:hidden block tracking-[3px] text-center mt-10 leading-[40px] sm:leading-[50px] text-white-1 font-terminaExtraDemi'>
@@ -165,10 +166,10 @@ const WhoWeAre = () => {
               className='w-full flex justify-center items-center'
               triggerOnce
             >
-              <div className='w-full max-w-[550px] 2xl:max-w-[650px] 3xl:max-w-[800px] h-full wrapper1'>
-                <div className='w-full max-w-[550px] 3xl:max-w-[800px] 2xl:max-w-[650px] borderGradientC1 h-full flex justify-between items-center lg:items-start flex-col px-0 sm:px-6 py-6'>
-                  <div className='w-full block lg:absolute -right-12 top-0'>
-                    <div className='w-full max-w-[300px] 2xl:max-w-[500px] 3xl:max-w-[600px] xsm:max-w-[250px] sm:max-w-[300px] csm:max-w-[350px] md:max-w-[400px] 2xl:h-[400px] 3xl:h-[500px] h-[200px] xsm:h-[200px] sm:h-[250px] csm:h-[300px] relative md:left-0 left-[0rem] xsm:left-12 sm:left-[4rem] csm:left-[2rem]'>
+              <div className='w-full max-w-[550px] lg:max-w-[700px] xl:max-w-[650px] 3xl:max-w-[800px] h-full wrapper1'>
+                <div className='w-full max-w-[550px] lg:max-w-[700px] 3xl:max-w-[800px] xl:max-w-[650px] borderGradientC1 h-full flex justify-between items-center lg:items-start flex-col px-0 sm:px-6 py-6'>
+                  <div className='w-full flex justify-center lg:justify-end lg:absolute right-0 lg:right-4 top-0 lg:ml-0 -ml-[5rem] sm:-ml-[7rem] md:-ml-[5rem] mt-[1rem]'>
+                    <div className='w-full max-w-[300px] 2xl:max-w-[500px] 3xl:max-w-[600px] xsm:max-w-[250px] sm:max-w-[350px] csm:max-w-[380px] md:max-w-[450px] lg:max-w-[420px] 2xl:h-[400px] 3xl:h-[500px] h-[250px] xsm:h-[200px] sm:h-[280px] csm:h-[350px] relative'>
                       <Image
                         src='/assets/col4.svg'
                         className='object-cover'
@@ -178,7 +179,7 @@ const WhoWeAre = () => {
                     </div>
                   </div>
                   <div className='w-full flex gap-4 flex-col'>
-                    <h2 className='text-[26px] sm:text-[40px] 2xl:text-[58px] 3xl:text-[75px] z-40 text-center lg:text-left break-all xl:whitespace-nowrap mt-0 lg:mt-[12rem] 2xl:mt-[14rem] 3xl:mt-[22rem] tracking-[3px] leading-[40px] 2xl:leading-[80px] sm:leading-[55px] text-white-1 font-terminaExtraDemi'>
+                    <h2 className='text-[26px] sm:text-[40px] 2xl:text-[58px] 3xl:text-[75px] z-40 text-center lg:text-left break-all xl:whitespace-nowrap -mt-10 sm:-mt-[4rem] md:-mt-[4rem] lg:mt-[12rem] 2xl:mt-[14rem] 3xl:mt-[22rem] tracking-[3px] leading-[40px] 2xl:leading-[80px] sm:leading-[55px] text-white-1 font-terminaExtraDemi'>
                       Infinite <br />{' '}
                       <span className='textColor break-words'>
                         Customization
@@ -189,19 +190,19 @@ const WhoWeAre = () => {
                       and trade any SPL token.
                     </p>
                   </div>
-                  <div className='w-full flex justify-center lg:justify-end lg:mt-0 mt-8 2xl:mt-12'>
+                  <div className='w-full flex justify-center lg:justify-end lg:mt-6 mt-8 2xl:mt-12'>
                   <a
                     href='https://github.com/openbook-dex/openbook-v2'
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='flex group hrGr z-50 justify-center items-center gap-2'
+                    className='flex hrGr group z-50 justify-center items-center gap-2'
                   >
                     <p className='text-white-1 3xl:text-[32px] 2xl:text-[22px] text-[16px] font-normal'>
                       Learn More
                     </p>
-                    <FiArrowRight className='text-[20px] 3xl:text-[36px] 2xl:text-[26px] text-white-1 group-hover:text-[#00ffe5]' />
+                     <FiArrowRight className='text-[20px] 3xl:text-[36px] 2xl:text-[26px] text-white-1 group-hover:text-[#00ffe5]' />
                   </a>
-                </div>
+                  </div>
                 </div>
               </div>
             </Fade>
@@ -229,6 +230,7 @@ const WhoWeAre = () => {
                       100% on-chain and noncustodial orderbook.
                     </p>
                   </div>
+
                   <div className='w-full flex justify-center lg:justify-end mt-8 lg:mt-28'>
                   <a
                     href='https://github.com/openbook-dex/openbook-v2'
@@ -241,7 +243,7 @@ const WhoWeAre = () => {
                     </p>
                      <FiArrowRight className='text-[20px] 3xl:text-[36px] 2xl:text-[26px] text-white-1 group-hover:text-[#00ffe5]' />
                   </a>
-                </div>
+                  </div>
                 </div>
               </div>
             </Fade>

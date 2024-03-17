@@ -181,7 +181,7 @@ body {
     background-color: transparent !important;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 760px) {
   .drawer {
     width: 70% !important;
   }
