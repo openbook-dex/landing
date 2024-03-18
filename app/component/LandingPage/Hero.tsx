@@ -1,11 +1,50 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Wrapper from '../shared/ComponentWrapper/Wrapper';
 import * as Icons from '../../svg/Icons';
 import { Fade, Zoom, Slide } from 'react-awesome-reveal';
 
-const Hero = () => {
+interface MarketData {
+  notionalVolume: number;
+  notionalVolume24hour: number;
+}
+
+const Hero: React.FC = () => {
+  // Adjust useState to work with the data structure returned by your API
+  const [items, setItems] = useState<MarketData[]>([]);
+
+  useEffect(() => {
+    fetch('https://prod.arcana.markets/api/openbookv2/markets')
+      .then(response => response.json())
+      .then((data) => {
+        // Assume the data returned is an array; adjust based on your actual API response
+        if (Array.isArray(data)) {
+          setItems(data);
+        } else {
+          console.error('Unexpected API response structure:', data);
+          // Handle unexpected structure or set a default value
+        }
+      }).catch(error => console.error('Fetching error:', error));
+  }, []);
+
+  // Safely calculate the total 24H volume from the fetched items
+  const total24HVolume = items.reduce((acc, item) => acc + (item.notionalVolume24hour || 0), 0);
+
+    // Total number of markets is simply the length of the items array
+    const totalMarkets = items.length;
+
+  // Function to format the volume
+  const formatVolume = (volume: number): string => {
+    // Format implementation remains the same
+    if (volume >= 1e6) {
+      return `$${(volume / 1e6).toFixed(1)}M`;
+    } else if (volume >= 1e3) {
+      return `$${(volume / 1e3).toFixed(1)}K`;
+    }
+    return `$${volume.toFixed(2)}`;
+  };
+
   return (
     <div className='w-full overflow-x-hidden overflow-y-hidden h-[calc(100vh-60px)] md:h-[calc(100vh-90px)] justify-center items-center flex relative'>
       <Wrapper style='h-full'>
@@ -36,7 +75,7 @@ const Hero = () => {
                 <div className='w-full py-3 2xl:py-5 3xl:py-14 flex justify-center rounded-xl items-center gap-24 sm:gap-28 3xl:gap-[14rem] borderGradient'>
                   <div className='flex justify-center items-center flex-col gap-0'>
                     <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
-                      $9.8M
+                    {formatVolume(total24HVolume)}
                     </p>
                     <p className='text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[24px] font-normal 3xl:text-[44px] text-white-1/60'>
                       24H Volume
@@ -44,7 +83,7 @@ const Hero = () => {
                   </div>
                   <div className='flex justify-center items-center flex-col gap-0'>
                     <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
-                      8.9k
+                    {totalMarkets}
                     </p>
                     <p className='text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[24px] font-normal 3xl:text-[48px] text-white-1/60'>
                       Total Markets
