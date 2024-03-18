@@ -55,7 +55,7 @@ const ecoSystemData = [
     path: '#',
     name: 'trade',
     img: (
-      <a href='https://v4xyz.prism.ag/trade/v2/' target='_blank' rel='noopener noreferrer'>
+      <a href='https://prism.ag/trade/' target='_blank' rel='noopener noreferrer'>
       <div className='w-[160px] sm:w-[250px] 2xl:w-[400px] 3xl:w-[650px] 2xl:h-[100px] 3xl:h-[280px] h-[25px] sm:h-[44px] relative'>
         <Image src='/assets/prism.svg' fill alt='' className='object-fill' />
       </div>
