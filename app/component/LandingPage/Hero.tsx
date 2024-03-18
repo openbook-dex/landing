@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Wrapper from '../shared/ComponentWrapper/Wrapper';
 import * as Icons from '../../svg/Icons';
 import { Fade, Zoom, Slide } from 'react-awesome-reveal';
-
+import Loading from '../shared/Loading';
 interface MarketData {
   notionalVolume: number;
   notionalVolume24hour: number;
@@ -26,7 +26,6 @@ const Hero: React.FC = () => {
   }, []);
 
   const total24HVolume = items.reduce((acc, item) => acc + (item.notionalVolume24hour || 0), 0);
-
     const totalMarkets = items.length;
 
   const formatVolume = (volume: number): string => {
@@ -67,17 +66,25 @@ const Hero: React.FC = () => {
               <div className='w-full max-w-[300px] rounded-xl 3xl:rounded-2xl sm:max-w-[500px] md:max-w-[700px] 2xl:max-w-[900px] 3xl:max-w-[1750px] flex justify-center items-center gradient-wrapper '>
                 <div className='w-full py-3 2xl:py-5 3xl:py-14 flex justify-center rounded-xl items-center gap-24 sm:gap-28 3xl:gap-[14rem] borderGradient'>
                   <div className='flex justify-center items-center flex-col gap-0'>
-                    <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
-                    {formatVolume(total24HVolume)}
-                    </p>
+                  {total24HVolume > 0 ? (
+                      <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
+                        {formatVolume(total24HVolume)}
+                      </p>
+                    ) : (
+                      <Loading />
+                    )}
                     <p className='text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[24px] font-normal 3xl:text-[44px] text-white-1/60'>
                       24H Volume
                     </p>
                   </div>
                   <div className='flex justify-center items-center flex-col gap-0'>
-                    <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
-                    {totalMarkets}
-                    </p>
+                  {totalMarkets > 0 ? (
+                      <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
+                        {totalMarkets}
+                      </p>
+                    ) : (
+                      <Loading /> // Use your Loading component here as well
+                    )}
                     <p className='text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[24px] font-normal 3xl:text-[48px] text-white-1/60'>
                       Total Markets
                     </p>
