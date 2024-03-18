@@ -11,32 +11,25 @@ interface MarketData {
 }
 
 const Hero: React.FC = () => {
-  // Adjust useState to work with the data structure returned by your API
   const [items, setItems] = useState<MarketData[]>([]);
 
   useEffect(() => {
     fetch('https://prod.arcana.markets/api/openbookv2/markets')
       .then(response => response.json())
       .then((data) => {
-        // Assume the data returned is an array; adjust based on your actual API response
         if (Array.isArray(data)) {
           setItems(data);
         } else {
           console.error('Unexpected API response structure:', data);
-          // Handle unexpected structure or set a default value
         }
       }).catch(error => console.error('Fetching error:', error));
   }, []);
 
-  // Safely calculate the total 24H volume from the fetched items
   const total24HVolume = items.reduce((acc, item) => acc + (item.notionalVolume24hour || 0), 0);
 
-    // Total number of markets is simply the length of the items array
     const totalMarkets = items.length;
 
-  // Function to format the volume
   const formatVolume = (volume: number): string => {
-    // Format implementation remains the same
     if (volume >= 1e6) {
       return `$${(volume / 1e6).toFixed(1)}M`;
     } else if (volume >= 1e3) {

@@ -70,9 +70,9 @@ const socialIcons = [
     ),
   },
   {
-    path: 'https://github.com/openbook-dex',
+    path: 'https://github.com/openbook-dex/openbook-docs',
     name: (
-      <Icons.gitBook className='w-[32px] 2xl:w-[48px] h-[32px] 3xl:h-[55px] 2xl:h-[40px] 3xl:w-[70px] hover:scale-105 duration-300' />
+      <Icons.gitBook className='w-[32px] 2xl:w-[48px] h-[32px] 3xl:h-[55px] 2xl:h-[40px] 3xl:w-[70px] hover:scale-105 duration-300 cursor-not-allowed' />
     ),
   },
 ];
