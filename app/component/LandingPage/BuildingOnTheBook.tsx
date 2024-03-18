@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Fade, Slide } from 'react-awesome-reveal';
+import * as Icons from '../../svg/Icons';
 
 const BuildingOnTheBook = () => {
   return (
@@ -24,6 +25,9 @@ const BuildingOnTheBook = () => {
             <p className='text-white-1/40 font-medium text-[16px] sm:text-[18px] 2xl:text-[30px] 3xl:text-[40px] lg:text-[20px]'>
             <a href="mailto:info@openbook.com" className='text-white-1/40 font-medium text-[16px] sm:text-[18px] lg:text-[20px]'>
               info@openbook.com
+            </a>
+            <a href="https://discord.com/invite/pFvxfWcsvt" className='text-white-1/40 font-medium text-[16px] sm:text-[18px] lg:text-[20px]'>
+            <Icons.discord className='w-[32px] 2xl:w-[48px] h-[32px] 3xl:h-[55px] 2xl:h-[40px] 3xl:w-[70px] hover:scale-105 duration-300' />
             </a>
             </p>
             </Fade>
