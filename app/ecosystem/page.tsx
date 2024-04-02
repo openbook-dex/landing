@@ -131,6 +131,17 @@ const ecoSystemData = [
       </a>
     ),
   },
+  {
+    path: '#',
+    name: 'LIQUIDITY',
+    img: (
+      <a href='https://beta.dual.finance/loan' target='_blank' rel='noopener noreferrer'>
+      <div className='w-[160px] sm:w-[250px] 2xl:w-[400px] 3xl:w-[650px] 2xl:h-[100px] 3xl:h-[280px] h-[25px] sm:h-[44px] relative'>
+        <Image src='/assets/dual-finance-logo.svg' fill alt='' className='object-fill' />
+      </div>
+      </a>
+    ),
+  },
 ];
 
 export default page;
