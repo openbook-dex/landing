@@ -55,20 +55,32 @@ const ecoSystemData = [
     path: '#',
     name: 'trade',
     img: (
-      <a href='https://prism.ag/trade/' target='_blank' rel='noopener noreferrer'>
-      <div className='w-[160px] sm:w-[250px] 2xl:w-[400px] 3xl:w-[650px] 2xl:h-[100px] 3xl:h-[280px] h-[25px] sm:h-[44px] relative'>
-        <Image src='/assets/prism.svg' fill alt='' className='object-fill' />
+      <a href='https://dropcopy.io/workstation/' target='_blank' rel='noopener noreferrer'>
+      <div className='w-[180px] sm:w-[300px] 2xl:w-[550px] 3xl:w-[800px] h-[45px] 2xl:h-[120px] 3xl:h-[300px] sm:h-[80px] relative'>
+        <Image src='/assets/dropcopy.svg' fill alt='' className='object-fill' />
+      </div>
+      </a>
+
+    ),
+  },
+  {
+    path: '#',
+    name: 'TRADE',
+    img: (
+      <a href='https://app.mango.markets/trade/' target='_blank' rel='noopener noreferrer'>
+      <div className='w-[180px] sm:w-[300px] 2xl:w-[550px] 3xl:w-[800px] h-[45px] 2xl:h-[120px] 3xl:h-[300px] sm:h-[80px] relative'>
+        <Image src='/assets/mango.svg' fill alt='' className='object-fill' />
       </div>
       </a>
     ),
   },
   {
     path: '#',
-    name: 'analytics',
+    name: 'trade',
     img: (
-      <a href='https://app.arcana.markets/data/' target='_blank' rel='noopener noreferrer'>
-      <div className='w-[180px] sm:w-[300px] 2xl:w-[550px] 3xl:w-[800px] h-[45px] 2xl:h-[120px] 3xl:h-[300px] sm:h-[80px] relative'>
-        <Image src='/assets/arcana.svg' fill alt='' className='object-fill' />
+      <a href='https://prism.ag/trade/' target='_blank' rel='noopener noreferrer'>
+      <div className='w-[160px] sm:w-[250px] 2xl:w-[400px] 3xl:w-[650px] 2xl:h-[100px] 3xl:h-[280px] h-[25px] sm:h-[44px] relative'>
+        <Image src='/assets/prism.svg' fill alt='' className='object-fill' />
       </div>
       </a>
     ),
@@ -99,23 +111,11 @@ const ecoSystemData = [
   },
   {
     path: '#',
-    name: 'trade',
+    name: 'analytics',
     img: (
-      <a href='https://dropcopy.io/workstation/' target='_blank' rel='noopener noreferrer'>
+      <a href='https://app.arcana.markets/data/' target='_blank' rel='noopener noreferrer'>
       <div className='w-[180px] sm:w-[300px] 2xl:w-[550px] 3xl:w-[800px] h-[45px] 2xl:h-[120px] 3xl:h-[300px] sm:h-[80px] relative'>
-        <Image src='/assets/dropcopy.svg' fill alt='' className='object-fill' />
-      </div>
-      </a>
-
-    ),
-  },
-  {
-    path: '#',
-    name: 'TRADE',
-    img: (
-      <a href='https://app.mango.markets/trade/' target='_blank' rel='noopener noreferrer'>
-      <div className='w-[180px] sm:w-[300px] 2xl:w-[550px] 3xl:w-[800px] h-[45px] 2xl:h-[120px] 3xl:h-[300px] sm:h-[80px] relative'>
-        <Image src='/assets/mango.svg' fill alt='' className='object-fill' />
+        <Image src='/assets/arcana.svg' fill alt='' className='object-fill' />
       </div>
       </a>
     ),

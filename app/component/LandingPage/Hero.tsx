@@ -12,33 +12,6 @@ interface MarketData {
 const Hero: React.FC = () => {
   const [items, setItems] = useState<MarketData[]>([]);
 
-  useEffect(() => {
-    fetch('https://prod.arcana.markets/api/openbookv2/markets')
-      .then(response => response.json())
-      .then((data) => {
-        if (Array.isArray(data)) {
-          setItems(data);
-        } else {
-          console.error('Unexpected API response structure:', data);
-        }
-      }).catch(error => console.error('Fetching error:', error));
-  }, []);
-
-  const total24HVolume = items.reduce((acc, item) => acc + (item.notionalVolume24hour || 0), 0);
-    const totalMarkets = items.length;
-
-  const formatVolume = (volume: number): string => {
-    if (volume >= 1e6) {
-      return `$${(volume / 1e6).toFixed(1)}M`;
-    } else if (volume >= 1e3) {
-      return `$${(volume / 1e3).toFixed(1)}K`;
-    }
-    return `$${volume.toFixed(2)}`;
-  };
-
-  const renderVolume = total24HVolume > 0 ? formatVolume(total24HVolume) : '_';
-  const renderTotalMarkets = items.length > 0 ? totalMarkets : '_';
-
   return (
     <div className='w-full overflow-x-hidden overflow-y-hidden h-[calc(100vh-60px)] md:h-[calc(100vh-90px)] justify-center items-center flex relative'>
       <Wrapper style='h-full'>
@@ -69,7 +42,7 @@ const Hero: React.FC = () => {
                 <div className='w-full py-3 2xl:py-5 3xl:py-14 flex justify-center rounded-xl items-center gap-24 sm:gap-28 3xl:gap-[14rem] borderGradient'>
                   <div className='flex justify-center items-center flex-col gap-0'>
                   <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
-                    {renderVolume}
+                    -
                     </p>
                     <p className='text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[24px] font-normal 3xl:text-[44px] text-white-1/60'>
                       24H Volume
@@ -77,7 +50,7 @@ const Hero: React.FC = () => {
                   </div>
                   <div className='flex justify-center items-center flex-col gap-0'>
                   <p className='text-white-1 text-[20px] sm:text-[30px] md:text-[48px] 2xl:text-[60px] 3xl:text-[120px] font-terminaExtraDemi'>
-                    {renderTotalMarkets}
+                    -
                     </p>
                     <p className='text-[14px] sm:text-[16px] md:text-[18px] 2xl:text-[24px] font-normal 3xl:text-[48px] text-white-1/60'>
                       Total Markets
