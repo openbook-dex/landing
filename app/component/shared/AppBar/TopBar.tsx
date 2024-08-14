@@ -40,11 +40,10 @@ const TopBar = () => {
               );
             })}
           </div>
-          <a href="https://prism.ag/trade"
-          className='text-white-1 z-50 px-8 2xl:px-10 3xl:px-16 md:block hidden py-3 bg-purple-1 rounded-lg text-[16px] font-medium hover:opacity-80 active:translate-y-[1px]'
-          target="_blank" rel="noopener noreferrer">
-          Trade Now
-          </a>
+          <Link href="/ecosystem"
+            className='text-white-1 z-50 px-8 2xl:px-10 3xl:px-16 md:block hidden py-3 bg-purple-1 rounded-lg text-[16px] font-medium hover:opacity-80 active:translate-y-[1px]'>
+            Trade Now
+          </Link>
           <div className='md:hidden block'>
             <button onClick={toggleDrawer}>
               <Icons.hamburger className='w-[28px] sm:w-[34px] h-[28px] sm:h-[34px]' />
@@ -83,11 +82,11 @@ const TopBar = () => {
                     );
                   })}
                 </div>
-                <a href="https://prism.ag/trade"
-                className='inline-block text-center w-full max-w-[400px] mt-6 px-8 py-3 bg-purple-1 text-white-1 rounded-lg text-[18px] font-medium hover:opacity-80 active:translate-y-[1px]'
-                target="_blank" rel="noopener noreferrer">
-                Trade Now
-              </a>
+                <Link href="/ecosystem"
+                  onClick={toggleDrawer}
+                  className='inline-block text-center w-full max-w-[400px] mt-6 px-8 py-3 bg-purple-1 text-white-1 rounded-lg text-[18px] font-medium hover:opacity-80 active:translate-y-[1px]'>
+                  Trade Now
+                </Link>
               </div>
             </Drawer>
           </div>
